@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer components {
+  * {
+    font-family: "Inter", sans-serif;
+  }
+  body {
+    background-color: rgb(249, 250, 251);
+  }
+  .list-item-nav {
+    @apply text-sm flex flex-wrap gap-4 items-center hover:scale-105 hover:bg-gray-100 hover:cursor-pointer rounded-lg p-2;
+  }
+  .img {
+    @apply h-6 w-6;
+  }
+  .list-item-sidebar {
+    @apply p-2 flex flex-wrap gap-1 items-center hover:cursor-pointer hover:scale-105 hover:bg-slate-100 rounded-lg;
+  }
+  .centered-section-heading {
+    @apply py-5 px-2 leading-6 h-12 mb-10 text-xl mt-8 max-w-2xl mx-auto text-center;
+  }
+  .heading {
+    @apply max-sm:text-3xl max-md:text-5xl md:text-6xl tracking-tighter;
+  }
+  .button {
+    @apply py-2 px-4 rounded-xl box-border;
+  }
+  .gradient-heading {
+    @apply font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-purple-400 to-blue-400;
+  }
+  .para {
+    @apply text-gray-500;
+  }
+  .th {
+    @apply cursor-pointer text-gray-500;
+  }
+  .loading-spinner {
+    @apply w-12 h-12 border-4 border-blue-100 border-t-blue-500 rounded-full animate-spin;
+  }
+}
