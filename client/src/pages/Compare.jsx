@@ -121,6 +121,7 @@ const Compare = () => {
               alt="AddIcon"
               className={`h-5 w-5 ${curr == "Table" && " filter invert"}`}
             />
+            {/* table */}
             <span>Table</span>
           </div>
         </div>
